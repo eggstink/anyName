@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.anyname.HelloController">
+   <children>
+      <VBox fx:id="pnLogin" alignment="CENTER" prefHeight="320.0" prefWidth="386.0" spacing="20.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <Separator orientation="VERTICAL" prefHeight="41.0" prefWidth="0.0" visible="false" />
+      
+          <Label fx:id="welcomeText" prefHeight="17.0" prefWidth="229.0" style="-fx-text-fill: #ff00ff;" text="Welcome">
+            <font>
+               <Font name="JetBrains Mono ExtraLight" size="33.0" />
+            </font>
+         </Label>
+         <HBox prefHeight="69.0" prefWidth="291.0">
+            <children>
+               <VBox prefHeight="60.0" prefWidth="106.0">
+                  <children>
+                     <Label style="-fx-text-fill: #ff00ff;" text="User Name:" />
+                     <Separator opacity="0.0" orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                     <Label fx:id="lblPassword" style="-fx-text-fill: #ff00ff;" text="Password:" />
+                  </children>
+               </VBox>
+               <VBox prefHeight="60.0" prefWidth="241.0">
+                  <children>
+                     <TextField fx:id="tfUserName" prefHeight="25.0" prefWidth="214.0" style="-fx-background-color: #ff00ff;" />
+                     <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                     <TextField fx:id="tfPassword" style="-fx-background-color: #ff00ff;" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+               <Button fx:id="btnRegister" alignment="CENTER" onAction="#onRegisterClickVisit" prefHeight="25.0" prefWidth="76.0" text="Register" textAlignment="CENTER" />
+                <Button fx:id="btnLogin" alignment="CENTER" onAction="#onLoginClick" prefHeight="25.0" prefWidth="76.0" text="Sign In" textAlignment="CENTER" />
+            </children>
+         </HBox>
+      </VBox>
+   </children>
+</AnchorPane>
